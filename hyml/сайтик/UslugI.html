@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Мой сайт</title>
+    <link rel="stylesheet" href="/style/StyleUSLIGI.css">
+    <link rel="stylesheet" href="/style/SHAPKA.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="formHandler.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="top">
+            <img src="Без названия.png" alt="Логотип" width="60px">
+            <div class="group-info">
+                <p>Группа ЭФБО-08-23</p>
+                <p>Прокофьев Роман Евгеньевич</p>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">сайтик</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="GOLOVACH.html">Главная</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Семестры
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="SEMKI.html">Первый семестр</a></li>
+                                <li><a class="dropdown-item" href="#">Второй семестр</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="UslugI.html">Услуги</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Авторизация</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Действие</a></li>
+                                <li><a class="dropdown-item" href="#">Другое действие</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+                              </ul>   
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h3 class="main-heading">Навигация по странице</h3>
+            <ul>
+                <li><a href="#frontend">Услуги</a></li>
+            </ul>
+        </aside>
+        
+        <section class="content">
+            <h1 class="main-heading">Разработка веб-приложений</h1>
+            <div class="grid-container">
+                <div class="product-card">
+                    <img src="Без названия1.png" alt="Создание Сайтов">
+                    <h2 class="sub-heading">Создание Сайтов</h2>
+                    <button class="order-button" onclick="openPopup('Создание Сайтов')">Заказать</button>
+                    <div class="card-body">
+                        <h5 class="card-title">Создание Сайтов</h5>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="интернет магазин.jpg" alt="Бизнес-сайт">
+                    <h2 class="sub-heading">Бизнес-сайт</h2>
+                    <button class="order-button" onclick="openPopup('Разработка Бизнес-сайтов')">Заказать</button>
+                    <div class="card-body">
+                        <h5 class="card-title">Бизнес-сайт</h5>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="/content/photoUSLUGI/large_8.jpeg" alt="Интернет-магазин">
+                    <h2 class="sub-heading">Бизнес-сайт</h2>
+                    <button class="order-button" onclick="openPopup('Создание Интернет-магазинов')">Заказать</button>
+                    <div class="card-body">
+                            <h5 class="card-title">Интернет-магазин</h5>
+                        </div>
+                    </div>    
+            
+         </section>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="popup-close" onclick="closePopup()">&times;</span>
+            <h2 id="popup-title">Заказать</h2>
+            <form id="order-form" onsubmit="submitForm(event)">
+                <div class="form-group">
+                    <label for="name">Как вас зовут:</label>
+                    <input type="text" id="name" placeholder="Например, Иванов Иван Иванович" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Ваш e-mail:</label>
+                    <input type="email" id="email" placeholder="test@mail.ru" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" placeholder="+7 919 999 99 99" required>
+                </div>
+                <div class="form-group">
+                    <label for="country">Страна:</label>
+                    <select id="country" required>
+                        <option value="russia">Россия</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date">Дата:</label>
+                    <input type="date" id="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="comment">Комментарий:</label>
+                    <textarea id="comment" placeholder="Введите ваш комментарий"></textarea>
+                </div>
+                <button type="submit" class="form-group">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+    
+
+    <script>
+        function openPopup(title) {
+            document.getElementById('popup-title').innerText = 'Заказать ' + title;
+            document.getElementById('popup').style.display = 'flex';
+        }
+
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+
+
+        function submitForm(event) {
+            event.preventDefault();
+            alert('Заявка отправлена!');
+            closePopup();
+        }
+    </script>
+     <form id="myForm">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required>
+        <button type="submit">Отправить</button>
+    </form>
+    <div id="message" class="hidden"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

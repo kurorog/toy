@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Мой сайт</title>
+    <link rel="stylesheet" href="/style/StyleGLAVNIA.css">
+    <link rel="stylesheet" href="/style/SHAPKA.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="formHandler.js"></script>
+    <script src="script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анимация фона</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вращающаяся фотография</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        img {
+            transition: transform 0.2s;
+            /* Плавный переход при изменении размера */
+        }
+
+        .animate-bg {
+            transition: background-color 0.5s ease;
+        }
+
+        .bg-color-change {
+            background-color: yellow; /* Замените на нужный цвет */
+        }
+
+        h1 {
+            transition: transform 0.2s;
+        }
+
+        h1:hover {
+            transform: scale(1.1); /* Увеличение заголовка на 10% при наведении */
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div id="top">
+            <img src="Без названия.png" alt="Логотип" width="60px">
+            <div class="group-info">
+                <p>Группа ЭФБО-08-23</p>
+                <p>Прокофьев Роман Евгеньевич</p>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">сайтик</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Переключатель навигации">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="GOLOVACH.html">Главная</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Семестры
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="SEMKI.html">Первый семестр</a></li>
+                                <li><a class="dropdown-item" href="#">Второй семестр</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="UslugI.html">Услуги</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Авторизация</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Действие</a></li>
+                                <li><a class="dropdown-item" href="#">Другое действие</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class ="dropdown-item" href="#">Что-то еще здесь</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Навигация по странице</h3>
+            <ul>
+                <li><a href="#">Фронтенд</a></li>
+                <li><a href="#">Бэкенд</a></li>
+            </ul>
+        </aside>
+
+        <section class="content">
+            <h1>Добро пожаловать на мой сайт</h1>
+            <p>Меня зовут прокофьев роман и я начинающий специалист по веб-разработке.</p>
+            <img id="studentPhoto" src="photo_2024-09-13_18-29-11.png" alt="Profile Picture" width="75px">
+            <style>
+                .rotating-image {
+                    width: 75px; /* Установите ширину в 75 пикселей */
+                    height: auto; /* Сохраняет пропорции изображения */
+                }
+            </style>
+            
+            <div class="image-container">
+                <img src="photo_2024-09-13_18-29-11.png" alt="Вращающаяся фотография" class="rotating-image">
+            </div>
+            <div id="primer">
+
+            </div>
+            <div id="primer">
+                <div>
+                    <h2 class="qwerty">Фронтенд</h2>
+                    <p id="animated-paragraph">
+                        Фронтенд (англ. front end, frontend) — презентационная часть информационной или
+                        программной системы, её пользовательский интерфейс и связанные с ним компоненты; применяется в
+                        соотношении с базисной частью системы, её внутренней реализацией, называемой в этом случае
+                        бэкендом (англ. backend).
+                    </p>
+                    <script src="script.js"></script></p>
+                    <video controls width="400">
+                        <source src="метро.mp4" type="video/mp4">
+                        Ваш браузер не поддерживает тег video.
+                    </video>
+                </div>
+                <div>
+                    <h2>Бэкенд</h2>
+                    <p>Бэкенд (англ. back-end) — начинка сайта или приложения, скрытая от пользователя. Бэкендом
+                        называют программно-аппаратную часть сервиса, которая работает на сервере, а не в браузере или
+                        на компьютере.</p>
+                    <video controls width="400">
+                        <source src="футбольчик.mp4" type="video/mp4">
+                        Ваш браузер не поддерживает тег video.
+                    </video>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        &copy; прокофьев роман, 2024
+    </footer>
+
+    <script>
+        const studentPhoto = document.getElementById('studentPhoto');
+
+        // Обработчик события mouseover
+        studentPhoto.addEventListener('mouseover', function () {
+            this.style.transform = 'scale(1.1)'; // Увеличение размера на 10%
+        });
+
+        // Обработчик события mouseout (возврат к исходному размеру)
+        studentPhoto.addEventListener('mouseout', function () {
+            this.style.transform = 'scale(1)'; // Возврат к исходному размеру
+        });
+
+        // Обработчик события click
+        studentPhoto.addEventListener('click', function () {
+            this.src = 'i.jpg'; // Замените на URL фотографии любимого преподавателя
+            this.alt = 'Фотография любимого преподавателя'; // Обновление alt текста
+        });
+
+        // Обработчик события dblclick
+        studentPhoto.addEventListener('dblclick', function () {
+            alert('Не налегай, у меня не так много любимых преподавателей');
+        });
+
+        // Paragraph Animation
+        const paragraph = document.querySelector(".qwerty");
+        if (paragraph) {
+            paragraph.addEventListener('click', function() {
+                this.classList.toggle('bg-color-change'); // Toggle the background color class
+            });
+        }
+    </script>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
